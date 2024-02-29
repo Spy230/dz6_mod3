@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="message_one">привет, какие планы на выходные ?</string>
+    <string name="message_two">Я СОБИРАЮСЬ ЦЕЛЫЙ ДЕНЬ СПАТЬ!!!!</string>
+</resources>

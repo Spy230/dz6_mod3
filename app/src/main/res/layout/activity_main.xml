@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <com.stelladk.arclib.ArcLayout
+        android:id="@+id/message_one"
+        android:layout_width="364dp"
+        android:layout_height="103dp"
+        android:background="@drawable/shape_message"
+        android:orientation="vertical"
+        app:ArcRadius="14dp"
+        app:ArcType="inner"
+        app:BottomLeftArc="outer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_message_one"
+            android:layout_width="238dp"
+            android:layout_height="99dp"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_message"
+            android:text="@string/message_one"
+            android:textColor="@color/text_message"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="59dp"
+            android:layout_height="108dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_message"
+            android:clipToOutline="true"
+            app:srcCompat="@drawable/caeb2353c5a45dc2d9ac766f2d95e60a"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+    </com.stelladk.arclib.ArcLayout>
+
+    <com.stelladk.arclib.ArcLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="88dp"
+        android:background="@drawable/shape_linear_background"
+        android:orientation="horizontal"
+        app:ArcRadius="14dp"
+        app:ArcType="inner"
+        app:BottomLeftArc="outer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="78dp"
+            android:layout_height="81dp"
+            app:srcCompat="@drawable/_zand1mhjhw"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="233dp"
+            android:layout_height="139dp"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_message"
+            android:text="@string/message_two"
+            android:textColor="@color/text_message"
+            android:textSize="8sp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="313dp" />
+
+    </com.stelladk.arclib.ArcLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

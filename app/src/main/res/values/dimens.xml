@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_message">10dp</dimen>
+    <integer name="padding_size">10</integer>
+</resources>

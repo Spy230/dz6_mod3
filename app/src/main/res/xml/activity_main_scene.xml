@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/end_linear_layout"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1437"
+        motion:autoTransition="animateToEnd">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/message_one"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="25dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25dp"
+            motion:layout_editor_absoluteY="53dp" />
+
+        <Constraint
+            motion:layout_editor_absoluteY="51dp"
+            motion:layout_editor_absoluteX="148dp"
+            android:id="@+id/text_message_one"/>
+
+        <Constraint
+            motion:layout_constraintVertical_bias="0.352"
+            android:layout_height="86dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.213"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="361dp"
+            android:id="@+id/linearLayout" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/message_one"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="25dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:layout_height="108dp"
+            android:layout_width="59dp"
+            android:id="@+id/imageView"
+            motion:layout_editor_absoluteX="4dp" />
+
+        <Constraint
+            motion:layout_constraintTop_toBottomOf="@+id/message_one"
+            android:id="@+id/linearLayout"
+            android:layout_width="39dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="68dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Добавленная ссылка на textView -->
+        <Constraint
+            android:id="@+id/textView"
+            motion:layout_editor_absoluteY="250dp"
+            motion:layout_editor_absoluteX="99dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_linear_layout">
+        <Constraint
+            android:id="@id/linearLayout"
+            android:layout_width="356dp"
+            android:layout_height="91dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message_one"
+            android:layout_marginTop="16dp" />
+    </ConstraintSet>
+
+</MotionScene>
